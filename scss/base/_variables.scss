@@ -1,0 +1,24 @@
+
+$color1: #920605;
+$color2: #f5a051;
+$color3: #f0e3a5;
+$font: 'Kumbh Sans', sans-serif;
+
+%secciones {
+    text-align: center;
+    font-family: $font;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    color: $color1;
+    padding-top: 70px;
+    position: relative;
+}
+
+%textos-paginas{
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 400;
+    color:#000;
+}
