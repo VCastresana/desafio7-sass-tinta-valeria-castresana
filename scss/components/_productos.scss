@@ -2,13 +2,7 @@
     width: 90%;
 }
 .modeloremera{
-    font-size: 15px;
-    font-family: $font ;
-    font-weight: 400;
-    color: #000;
-    text-transform: uppercase;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    @include modelo-remeras(15px, 10px, 5px);
 }
 .precio{
     font-size: 20px;

@@ -9,7 +9,7 @@ h2 {
   padding-top: 70px;
   position: relative; }
 
-.texto-contacto, .talles-textos, .textos-informacion {
+.textos-contacto, .talles-textos, .textos-informacion {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -63,8 +63,7 @@ h2 {
 
 .footer {
   background-color: #920605;
-  margin-top: 40px;
-  height: 250px; }
+  margin-top: 40px; }
   .footer-logos {
     width: 3vw;
     margin-bottom: 10px; }
@@ -98,8 +97,9 @@ h2 {
       .footer-nav li a:hover {
         font-weight: 700;
         transform: scale(0.9); }
-  .footer .ul {
-    padding-left: 0; }
+  .footer ul {
+    padding-left: 0;
+    margin-left: 0; }
   .footer-redes {
     font-size: 12px;
     font-family: "Kumbh Sans", sans-serif;
@@ -133,6 +133,9 @@ h2 {
   100% {
     color: #920605;
     top: 0px; } }
+
+.main {
+  min-width: 100vw; }
 
 .body-barras {
   display: grid;
@@ -211,6 +214,15 @@ h2 {
   margin-right: 40px;
   margin-top: 20px; }
 
+.body-texto-apertura-bold {
+  font-size: 25px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px; }
+
 .cuerpo-barra {
   display: flex;
   flex-direction: row;
@@ -232,7 +244,7 @@ h2 {
   height: 20px;
   width: 33vw; }
 
-.label {
+label {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
   font-size: 10px;
@@ -240,6 +252,9 @@ h2 {
   display: block; }
 
 .boton {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
   background-color: #920605;
   border: none; }
 
@@ -279,13 +294,13 @@ h2 {
   width: 90%; }
 
 .modeloremera {
-  font-size: 15px;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
   color: #000;
   text-transform: uppercase;
   margin-top: 10px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  font-size: 15px; }
 
 .precio {
   font-size: 20px;
@@ -317,7 +332,7 @@ h2 {
     .header-logo {
       width: 20vw; }
   h2 {
-    font-size: 35px; }
+    font-size: 40px; }
   .footer {
     height: 750px; }
     .footer-logosRedes {
@@ -333,6 +348,12 @@ h2 {
   .foto-remera {
     width: 90%; }
   .modeloremera {
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 8px;
+    margin-bottom: 3px;
     font-size: 12px; }
   .precio {
     font-size: 16px; }
@@ -358,7 +379,17 @@ h2 {
     font-size: 50px;
     margin-top: -10px; }
   .texto-apertura {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .boton {
+    font-size: 14px; }
+  .formulario {
+    width: 90vw;
+    margin-left: 0;
+    padding-left: 0px; }
+  .textos-contacto {
+    width: 90vw;
+    margin-left: 0;
+    padding-left: 0px; } }
 
 @media only screen and (max-width: 500px) {
   .header {
@@ -367,7 +398,7 @@ h2 {
       width: 30vw;
       margin-top: 0px; }
   .footer {
-    height: 900px; }
+    min-width: 100vw; }
     .footer-redes {
       font-size: 10px;
       margin-top: 40px; }
@@ -378,16 +409,16 @@ h2 {
     .footer-logosContacto {
       width: 6vw; }
   .body-barra1 {
-    height: 80px; }
+    height: 150px; }
   .body-barra2 {
-    height: 80px; }
+    height: 150px; }
   .body-barra3 {
-    height: 80px; }
+    height: 150px; }
   .body-barras {
-    margin-top: -40px;
+    margin-top: -80px;
     margin-bottom: 0; }
   h2 {
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 0; }
   .textos-informacion {
     font-size: 14px;
@@ -397,6 +428,12 @@ h2 {
   .foto-remera {
     width: 70%; }
   .modeloremera {
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 8px;
+    margin-bottom: 3px;
     font-size: 14px; }
   .precio {
     font-size: 18px; }
@@ -426,11 +463,16 @@ h2 {
     margin-top: 20px; }
   .textos-contacto {
     font-size: 14px; }
-  .titulo-apertura1 {
-    font-size: 35px;
+  .body-titulo-apertura1 {
+    font-size: 50px;
     margin-top: 30px; }
-  .titulo-apertura2 {
-    font-size: 35px;
+  .body-titulo-apertura2 {
+    font-size: 50px;
     margin-top: -10px; }
-  .texto-apertura {
-    font-size: 16px; } }
+  .body-texto-apertura {
+    font-size: 20px; }
+  .body-texto-apertura-bold {
+    font-size: 20px;
+    margin-top: -10px; }
+  .boton {
+    font-size: 12px; } }

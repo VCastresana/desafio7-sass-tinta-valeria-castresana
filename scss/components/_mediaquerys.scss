@@ -7,7 +7,7 @@
         }
     }
     h2{
-        font-size: 35px; 
+        font-size: map-get($cuerpo-secciones, tablet); 
     }
     .footer{
         height: 750px;   
@@ -33,7 +33,7 @@
         width: 90%;
     }
     .modeloremera{
-        font-size: 12px;
+        @include modelo-remeras(12px, 8px, 3px);
     }
     .precio{
         font-size: 16px;
@@ -69,6 +69,20 @@
     .texto-apertura{
         font-size: 18px;
     }
+    .boton{
+        font-size: 14px;
+    }
+    .formulario{
+        width: 90vw;
+        margin-left: 0;
+        padding-left: 0px;
+    }
+    .textos-contacto{
+        width: 90vw;
+        margin-left: 0;
+        padding-left: 0px;
+    }
+
 }
 @media only screen and (max-width: 500px){
     .header{
@@ -80,7 +94,7 @@
         }
     }
     .footer{
-        height: 900px; 
+        min-width: 100vw;
         
         &-redes{
             font-size: 10px;
@@ -98,21 +112,21 @@
     }
 
     .body-barra1{
-        height: 80px;
+        height: 150px;
     }
     .body-barra2{
-        height: 80px;
+        height: 150px;
     }
     .body-barra3{
-        height: 80px;
+        height: 150px;
     }
     .body-barras{
-        margin-top: -40px;
+        margin-top: -80px;
         margin-bottom: 0;
     }
 
     h2{
-        font-size: 25px; 
+        font-size: map-get($cuerpo-secciones, mobile); 
         margin-bottom: 0;
     }
     .textos-informacion {
@@ -125,7 +139,7 @@
         width: 70%;
     }
     .modeloremera{
-        font-size: 14px;
+        @include modelo-remeras(14px, 8px, 3px);
     }
     .precio{
         font-size: 18px;
@@ -163,15 +177,23 @@
     .textos-contacto{
         font-size: 14px;
     }
-    .titulo-apertura1{
-        font-size: 35px;
+    .body-titulo-apertura1{
+        font-size: 50px;
         margin-top: 30px;
     }
-    .titulo-apertura2{
-        font-size: 35px;
+    .body-titulo-apertura2{
+        font-size: 50px;
         margin-top: -10px;
     }
-    .texto-apertura{
-        font-size: 16px;
+    .body-texto-apertura{
+        font-size: 20px;
     } 
+    .body-texto-apertura-bold{
+        font-size: 20px;
+        margin-top: -10px;
+    } 
+    .boton{
+        font-size: 12px;
+    }
+
 }
